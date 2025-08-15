@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Worldwide - Helping Families Ease the Burden of Funeral Costs</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&amp;family=Montserrat:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Merriweather', serif;
+    background-color: #fdf7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+  }
+
+  header {
+    background: linear-gradient(90deg, rgba(205,228,247,0.95), rgba(255,200,200,0.95));
+    padding: 50px 30px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3em;
+    color: #004080;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+
+  .tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #D94F4F;
+    margin-top: 10px;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1e4d7b;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #D94F4F;
+  }
+
+  section {
+    padding: 60px 25px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+    position: relative;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  section:nth-child(even) {
+    background-color: #fff0f0;
+  }
+
+  section:nth-child(odd) {
+    background-color: #e6f0fa;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.9em;
+    color: #1e4d7b;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1em;
+    letter-spacing: 0.3px;
+  }
+
+  .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .left-text { flex-direction: row; justify-content: flex-start; text-align: left; }
+  .right-text { flex-direction: row-reverse; justify-content: flex-end; text-align: right; }
+
+  .text {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #D94F4F, #FF7F7F);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    margin-top: 15px;
+  }
+
+  .btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+
+  #contact .contact-info {
+    background: #ffe5e5;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #f5c2c2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .floating-shape {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  .shape1 { background: #D94F4F; top: 20px; left: 10px; }
+  .shape2 { background: #3399FF; top: 60px; right: 30px; }
+  .shape3 { background: #FF7F7F; bottom: 10px; left: 50%; }
+
+  @media (max-width: 768px) {
+    .section-content { flex-direction: column !important; text-align: center !important; }
+    .floating-shape { display: none; }
+  }
+
+  footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Worldwide</h1>
+  <div class="tagline">Protect Your Loved Ones with Pre-Need Planning</div>
+  <nav>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="visible">
+  <div class="section-content left-text">
+    <div class="text">
+      <h2>Plan Ahead &amp; Protect Your Loved Ones</h2>
+      <p>Pre-need funeral planning ensures your family is protected and costs are locked in.</p>
+    </div>
+    <div class="shapes">
+      <div class="floating-shape shape1"></div>
+      <div class="floating-shape shape2"></div>
+    </div>
+  </div>
+</section>
+
+<section class="visible">
+  <div class="section-content right-text">
+    <div class="text">
+      <h2>Request Your Free Consultation</h2>
+      <p>Click below to schedule a consultation easily online:</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdifd8eC2pzmy3KZeli732ra4iXLLjqo6jtxGhy77m6HeZR6Q/viewform" target="_blank" class="btn">Request Your Consultation</a>
+    </div>
+    <div class="shapes">
+      <div class="floating-shape shape3"></div>
+    </div>
+  </div>
+</section>
+
+<section id="resources" class="">
+  <div class="section-content left-text">
+    <div class="text">
+      <h2>Free Resources</h2>
+      <p>Helpful guides to understand funeral planning and make informed decisions:</p>
+      <div class="pdf-grid">
+        <a href="https://drive.google.com/file/d/1dHGECdYgM45mOuh6VtHJuIFL_aB85X9E/view" target="_blank" class="btn">Pre-Need</a>
+        <a href="https://drive.google.com/file/d/1wvp_zMlOwBeUYf2Cqflh3n6yGuSfhv8K/view" target="_blank" class="btn">Español</a>
+        <a href="https://drive.google.com/file/d/1TO1tBx_LEeRvyPbBgGvKDvTv2pOy4HXK/view" target="_blank" class="btn">Cremation</a>
+        <a href="https://drive.google.com/file/d/1ryPtH4LPTDd6p6zuSCKpvXEMNQbbJrGY/view" target="_blank" class="btn">U.S. Veterans Benefits</a>
+        <a href="https://drive.google.com/file/d/12XTF9-MWA94_ByVX3ripCfkmSYlRS02Z/view" target="_blank" class="btn">Funeral Answer Book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="">
+  <div class="section-content right-text">
+    <div class="text">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p><strong>Name:</strong> Angel Hernandez</p>
+        <p><strong>Phone:</strong> (714) 884-0163</p>
+        <p><strong>Email:</strong> angelhndzffl@gmail.com</p>
+        <p><strong>Address:</strong> 1740 W Katella Ave, Orange, CA 92867 Ste.P</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© Worldwide. All rights reserved.</p>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
